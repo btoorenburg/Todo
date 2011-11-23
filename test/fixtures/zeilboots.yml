@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  zeilnummer: 1
+  naam: MyString
+  eigenaar: 
+  datum_ankoop: 2011-11-18
+
+two:
+  zeilnummer: 1
+  naam: MyString
+  eigenaar: 
+  datum_ankoop: 2011-11-18

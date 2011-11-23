@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Zeilnummer:</b>
+  <%= @zeilboot.zeilnummer %>
+</p>
+
+<p>
+  <b>Naam:</b>
+  <%= @zeilboot.naam %>
+</p>
+
+<p>
+  <b>Eigenaar:</b>
+  <%= @zeilboot.eigenaar %>
+</p>
+
+<p>
+  <b>Datum ankoop:</b>
+  <%= @zeilboot.datum_ankoop %>
+</p>
+
+
+<%= link_to 'Edit', edit_zeilboot_path(@zeilboot) %> |
+<%= link_to 'Back', zeilboots_path %>

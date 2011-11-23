@@ -1,0 +1,33 @@
+<%= form_for(@zeilboot) do |f| %>
+  <% if @zeilboot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@zeilboot.errors.count, "error") %> prohibited this zeilboot from being saved:</h2>
+
+      <ul>
+      <% @zeilboot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :zeilnummer %><br />
+    <%= f.text_field :zeilnummer %>
+  </div>
+  <div class="field">
+    <%= f.label :naam %><br />
+    <%= f.text_field :naam %>
+  </div>
+  <div class="field">
+    <%= f.label :eigenaar %><br />
+    <%= f.text_field :eigenaar %>
+  </div>
+  <div class="field">
+    <%= f.label :datum_ankoop %><br />
+    <%= f.date_select :datum_ankoop %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

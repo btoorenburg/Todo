@@ -1,0 +1,29 @@
+<h1>Listing zeilboots</h1>
+
+<table>
+  <tr>
+    <th>Zeilnummer</th>
+    <th>Naam</th>
+    <th>Eigenaar</th>
+    <th>Datum ankoop</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @zeilboots.each do |zeilboot| %>
+  <tr>
+    <td><%= zeilboot.zeilnummer %></td>
+    <td><%= zeilboot.naam %></td>
+    <td><%= zeilboot.eigenaar %></td>
+    <td><%= zeilboot.datum_ankoop %></td>
+    <td><%= link_to 'Show', zeilboot %></td>
+    <td><%= link_to 'Edit', edit_zeilboot_path(zeilboot) %></td>
+    <td><%= link_to 'Destroy', zeilboot, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Zeilboot', new_zeilboot_path %>
