@@ -4,8 +4,7 @@ class CreateZeilboots < ActiveRecord::Migration
       t.integer :zeilnummer
       t.string :naam
       t.naam :eigenaar
-      t.date :datum_ankoop
-
+      t.date :datum_aankoop
       t.timestamps
     end
   end
